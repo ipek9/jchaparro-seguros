@@ -1,0 +1,51 @@
+---
+import Layout from '../layouts/Layout.astro';
+import KnowThis from '../components/KnowThis.astro';
+import FormContact from '../components/Form.astro';
+---
+
+<Layout title="Seguros de automovil - JChaparro Seguros">
+    <section>
+        <div class="vida-header flex items-end bg-fixed" >
+            <div class="px-5 lg:px-56">
+                <h1 class="text-4xl lg:text-6xl font-bold pb-20 drop-shadow-lg">
+                    Seguro de vida
+                </h1>
+            </div>
+        </div>
+        <div class="px-5 lg:px-56 pt-20">
+            <h2 class="text-4xl blue-site font-semibold pb-10">
+                Por un futuro mejor
+            </h2>
+            <p class="text-xl pb-5">
+                Asegura el futuro de tus seres queridos con nuestras pólizas de seguro de vida. Ofrecemos planes flexibles que se adaptan a tus necesidades, proporcionando una red de seguridad financiera en momentos difíciles.
+            </p>
+            <p class="text-xl">
+                Aenean velit arcu, porta eu tempor non, congue ut ligula. Sed consectetur leo justo, ut finibus ante porttitor sit amet. Proin convallis lobortis ullamcorper. Morbi ultricies ullamcorper sem eu mollis. Integer egestas, orci nec dapibus sollicitudin, purus tortor accumsan odio, vitae viverra quam odio at ex. Aliquam et volutpat libero, sed consectetur leo. Integer sollicitudin tempor risus volutpat sollicitudin. Sed ligula ante, luctus ornare arcu et, vestibulum sagittis turpis. Nam aliquet dolor nisi, in tincidunt lorem ornare in. Aliquam neque nulla, faucibus vitae erat consequat, tempor rutrum erat. Ut purus magna, mollis a consectetur 
+            </p>
+
+        </div>
+    
+
+        <KnowThis></KnowThis>
+
+		<FormContact></FormContact>
+
+
+    </section>
+    
+</Layout>
+
+<style>
+    .vida-header{
+        background-image: url('/images/vida/vida-1.jpg');
+        height: 500px;
+        background-size: cover;
+        background-position-y: center;
+    }
+    @media (max-width:576px){
+        .vida-header {
+            background-position-x: center;
+        }
+    }
+</style>

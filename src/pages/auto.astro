@@ -1,0 +1,46 @@
+---
+import Layout from '../layouts/Layout.astro';
+import KnowThis from '../components/KnowThis.astro';
+import FormContact from '../components/Form.astro';
+---
+
+<Layout title="Seguros de automovil - JChaparro Seguros">
+    <section>
+        <div class="auto-header flex items-end bg-fixed" >
+            <div class="px-5 lg:px-56">
+                <h1 class="text-4xl lg:text-6xl text-white font-bold pb-20 drop-shadow-lg">
+                    Seguro de auto
+                </h1>
+            </div>
+        </div>
+        <div class="px-5 lg:px-56 pt-20">
+            <h2 class="text-4xl blue-site font-semibold pb-10">
+                Sientete seguro en la carretera
+            </h2>
+            <p class="text-xl pb-5">
+                Mantén tu vehículo y a tus seres queridos protegidos con nuestras pólizas de seguros de auto. Ofrecemos cobertura completa que incluye daños a terceros, robo, accidentes, y asistencia en carretera, para que puedas conducir con total confianza.
+            </p>
+            <p class="text-xl">
+                Aenean velit arcu, porta eu tempor non, congue ut ligula. Sed consectetur leo justo, ut finibus ante porttitor sit amet. Proin convallis lobortis ullamcorper. Morbi ultricies ullamcorper sem eu mollis. Integer egestas, orci nec dapibus sollicitudin, purus tortor accumsan odio, vitae viverra quam odio at ex. Aliquam et volutpat libero, sed consectetur leo. Integer sollicitudin tempor risus volutpat sollicitudin. Sed ligula ante, luctus ornare arcu et, vestibulum sagittis turpis. Nam aliquet dolor nisi, in tincidunt lorem ornare in. Aliquam neque nulla, faucibus vitae erat consequat, tempor rutrum erat. Ut purus magna, mollis a consectetur 
+            </p>
+
+        </div>
+    
+
+        <KnowThis></KnowThis>
+
+		<FormContact></FormContact>
+
+
+    </section>
+    
+</Layout>
+
+<style>
+    .auto-header{
+        background-image: url('/images/automovil/auto-2.jpg');
+        height: 500px;
+        background-size: cover;
+        background-position-y: center;
+    }
+</style>

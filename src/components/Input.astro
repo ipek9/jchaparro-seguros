@@ -1,0 +1,24 @@
+---
+interface Props {
+	name: string;
+    title: string;
+    placeholder: string;
+}
+
+const { name, title, placeholder } = Astro.props;
+---
+
+
+
+<div class="form-group w-full pt-4">
+    <label for={name} class="block font-semibold text-xl pb-3">{title} <span class="text-red-600">*</span></label>
+    <input type="text" name={name} id={name} class="input-form w-full" placeholder={placeholder} />
+</div>
+
+<style>
+.input-form {
+    height: 50px;
+    border-radius: 10px;
+}
+
+</style>

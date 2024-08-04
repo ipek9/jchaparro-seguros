@@ -1,0 +1,54 @@
+---
+import InputForm from '../components/Input.astro';
+
+---
+
+<section id="contact" class="pt-20 lg:pt-32 mb-32">
+    <div class="px-10 lg:px-56">
+        <h3 class="title-section text-center">
+            Preguntanos
+        </h3>
+        <form class="mt-3 lg:px-56">
+            <div class="flex flex-col w-full">
+                <div class="flex flex-col lg:flex-row  lg:gap-10">
+                    <InputForm
+                        name="firstname"
+                        title="Nombre"
+                        placeholder="Introduce tu nombre"
+                    ></InputForm>
+                    <InputForm
+                        name="lastname"
+                        title="Apellidos"
+                        placeholder="Introduce tus apellidos"
+                    ></InputForm>
+                </div>
+                <div class="flex flex-col lg:flex-row  lg:gap-10 lg:mt-4">
+                    <InputForm
+                        name="email"
+                        title="Email"
+                        placeholder="Introduce tu correo electrónico"
+                    ></InputForm>
+                    <InputForm
+                        name="phone"
+                        title="Teléfono"
+                        placeholder="Introduce tu teléfono"
+                    ></InputForm>
+                </div>
+                <div class="mt-8">
+                    <label for="query" class="block font-semibold text-xl pb-3">
+                        Consulta <span class="text-red-600">*</span>
+                    </label>
+                    <textarea id="query" name="query" rows="4" class="w-full textarea-form" placeholder="En que podemos ayudarte..."></textarea>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+<style>
+    .textarea-form {
+        border-radius: 10px;
+    }
+    
+    </style>
