@@ -40,9 +40,18 @@ import EmailContact from '../components/ContactMail.astro';
 
 <style>
     .auto-header{
-        background-image: url('/images/automovil/auto-2.jpg');
+        background-image: url('/images/automovil/ban-auto.png');
         height: 500px;
-        background-size: cover;
-        background-position-y: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: 12%;
+    }
+    @media (max-width:576px){
+        .auto-header {
+            
+        height: 400px;
+            background-image: none;
+        background-color: #00469d;
+        }
     }
 </style>

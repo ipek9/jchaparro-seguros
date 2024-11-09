@@ -40,14 +40,17 @@ import EmailContact from '../components/ContactMail.astro';
 
 <style>
     .auto-header{
-        background-image: url('/images/hogar/ban-hogar.jpg');
+        background-image: url('/images/hogar/ban-hogar.png');
         height: 500px;
-        background-size: cover;
-        background-position-y: bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: 12%;
     }
     @media (max-width: 576px){
         .auto-header{
-            background-position-x: center;
+        height: 400px;
+            background-image: none;
+        background-color: #00469d;
         }
     }
 </style>

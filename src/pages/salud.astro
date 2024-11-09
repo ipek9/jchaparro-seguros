@@ -9,7 +9,7 @@ import EmailContact from '../components/ContactMail.astro';
     <section>
         <div class="salud-header flex items-end bg-fixed" >
             <div class="px-5 lg:px-56">
-                <h1 class="text-4xl lg:text-6xl  font-bold pb-20 drop-shadow-lg">
+                <h1 class="text-white text-4xl lg:text-6xl  font-bold pb-20 drop-shadow-lg">
                     Seguro de salud
                 </h1>
             </div>
@@ -41,14 +41,17 @@ import EmailContact from '../components/ContactMail.astro';
 
 <style>
     .salud-header{
-        background-image: url('/images/salut/ban-salud.jpg');
+        background-image: url('/images/salut/ban-salud.png');
         height: 500px;
-        background-size: cover;
-        background-position-y: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: 12%;
     }
     @media (max-width:576px){
         .salud-header {
-            background-position-x: 80%;
+            height: 400px;
+            background-image: none;
+            background-color: #00469d;
         }
     }
 </style>
