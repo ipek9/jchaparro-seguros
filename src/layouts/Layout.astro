@@ -2,6 +2,7 @@
 
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import GaleryPartners from '../components/partners/GaleryPartners.astro';
 interface Props {
 	title: string;
 }
@@ -26,6 +27,9 @@ const { title } = Astro.props;
 
 		<slot />
 		
+
+		<GaleryPartners></GaleryPartners>
+
 		<Footer></Footer>
 		<!-- Plugins js -->
 		<!-- <script src="../../path/to/flowbite/dist/flowbite.min.js"></script> -->
@@ -43,10 +47,11 @@ const { title } = Astro.props;
 	}
 	.title-section{
 		font-size: 35px;
-		color: #1F22A7;
+		color: #00469d;
 		font-weight: 700;
+		inline-size: max-content;
 	}
 	.blue-site{
-		color: #1F22A7;
+		color: #00469d;
 	}
 </style>
